@@ -1,0 +1,42 @@
+a{
+  text-decoration: none;
+}
+.container-worker {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+}
+.worker {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+.worker:before {
+  background: #FF4E00;
+  padding: 10px;
+  width: 60px;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  transform: rotate(-90deg);
+  color: white;
+}
+
+.worker__img{
+  width: 10%;
+  height: 120px;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+.worker__title{
+  text-align: center;
+}
+.worker__icon {
+  display: block;
+  margin-top: 10px;
+}
+.worker:hover .worker__icon {
+  color: #FF4E00;
+}
